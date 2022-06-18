@@ -53,8 +53,8 @@ export default function ProductDetailPage() {
               </Button>
             )}
             <Typography variant="h4">{data?.name}</Typography>
-            <Typography variant="body1">{data?.description}</Typography>
-            <Typography color="teal" variant="h6">
+            <Typography style={{margin: "2%"}} variant="body1">{data?.description}</Typography>
+            <Typography style={{margin: "2%"}} color="teal" variant="h6">
               {numberFormat(data?.price)}
             </Typography>
             {data?.quantity > 0 && (
