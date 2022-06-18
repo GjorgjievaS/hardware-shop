@@ -23,6 +23,11 @@ public class ManufacturerServiceImpl implements ManufacturerService {
     }
 
     @Override
+    public Manufacturer findByName(String name) {
+        return this.manufacturerRepository.findByName(name);
+    }
+
+    @Override
     public List<Manufacturer> findAll() {
         return this.manufacturerRepository.findAll();
     }
@@ -30,6 +35,11 @@ public class ManufacturerServiceImpl implements ManufacturerService {
     @Override
     public Optional<Manufacturer> save(String name, String address) {
         return Optional.of(this.manufacturerRepository.save(new Manufacturer(name)));
+    }
+
+    @Override
+    public Manufacturer save(Manufacturer manufacturer) {
+        return manufacturerRepository.save(manufacturer);
     }
 
     @Override

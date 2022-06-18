@@ -11,7 +11,11 @@ public interface ManufacturerService {
 
     List<Manufacturer> findAll();
 
+    Manufacturer findByName(String name);
+
     Optional<Manufacturer> save(String name, String address);
+
+    Manufacturer save(Manufacturer manufacturer);
 
     void deleteById(Long id);
 }

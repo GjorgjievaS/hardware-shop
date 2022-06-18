@@ -38,6 +38,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public Product findByName(String name) {
+        return this.productRepository.findByName(name);
+    }
+
+    @Override
     public Optional<Product> findById(Long id) {
         return this.productRepository.findById(id);
     }
@@ -67,6 +72,11 @@ public class ProductServiceImpl implements ProductService {
         Product product = new Product(name, description, price, quantity, category, manufacturer);
 
         return Optional.of(this.productRepository.save(product));
+    }
+
+    @Override
+    public Product save(Product product) {
+        return this.productRepository.save(product);
     }
 
     @Override

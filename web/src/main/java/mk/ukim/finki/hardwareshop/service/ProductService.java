@@ -18,6 +18,8 @@ public interface ProductService {
 
     List<Product> findAllByManufacturer(Manufacturer manufacturer);
 
+    Product findByName(String name);
+
     Optional<Product> save(String name,
                            String description,
                            Double price,
@@ -26,6 +28,8 @@ public interface ProductService {
                            Long manufacturer);
 
     Optional<Product> save(ProductDto productDto);
+
+    Product save(Product product);
 
     Optional<Product> edit(Long id,
                            String name,

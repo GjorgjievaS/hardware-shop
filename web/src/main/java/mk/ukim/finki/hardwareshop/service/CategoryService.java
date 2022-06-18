@@ -16,6 +16,10 @@ public interface CategoryService {
 
     List<Category> listCategories();
 
+    Category save(Category category);
+
+    Category findByName(String name);
+
    // List<Category> searchCategories(String searchText);
 
 }
