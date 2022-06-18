@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="023c9645-563f-415f-8af0-a6421080e88f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/HardwareShopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/CustomUsernamePasswordAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/JWTWebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/JwtAuthConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/filters/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/config/filters/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/dto/UserDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/enumerations/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/InvalidArgumentsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/InvalidUserCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/InvalidUsernameOrPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/PasswordsDoNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/UsernameNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/ManufacturerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/ManufacturerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/web/rest/CategoryRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/web/rest/LoginRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/web/rest/ManufacturerRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/db/migration/R__shop_views.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/web/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/web/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/HardwareShopApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/ChargeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/ChargeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/enumerations/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/enumerations/ShoppingCartStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/enumerations/ShoppingCartStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/CategoryNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/CategoryNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ManufacturerNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ManufacturerNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ProductAlreadyInShoppingCartException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ProductAlreadyInShoppingCartException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ShoppingCartNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/ShoppingCartNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/model/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/repository/ManufacturerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/repository/ManufacturerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/repository/ShoppingCartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/rest/ProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/web/rest/ProductRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/StripeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/StripeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/hardwareshop/service/impl/StripeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/mk/ukim/finki/hardwareshop/service/impl/StripeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mk/ukim/finki/hardwareshop/HardwareShopApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/mk/ukim/finki/hardwareshop/HardwareShopApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Ahx6cPTnEWgMHkwEJLw9tAJ919" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../emt-2021-master/web/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\JavaSpring\hardware-shop\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HardwareShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hardware-shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.hardwareshop.HardwareShopApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <additionalParameters>
+        <param>
+          <option name="enabled" value="true" />
+          <option name="name" value="DB_USERNAME" />
+          <option name="value" value="postgres" />
+        </param>
+        <param>
+          <option name="enabled" value="true" />
+          <option name="name" value="DB_PASSWORD" />
+          <option name="value" value="test" />
+        </param>
+      </additionalParameters>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="023c9645-563f-415f-8af0-a6421080e88f" name="Default Changelist" comment="" />
+      <created>1655475478243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655475478243</updated>
+      <workItem from="1655475503328" duration="632000" />
+      <workItem from="1655497922079" duration="10829000" />
+      <workItem from="1655513952426" duration="1046000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
