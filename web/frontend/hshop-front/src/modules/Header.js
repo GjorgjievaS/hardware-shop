@@ -119,7 +119,7 @@ export default function Header() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => navigate(`${page}`)}
+                onClick={() => navigate(`${page.replace(/\s+/g, "-").toLowerCase()}`)}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
