@@ -20,6 +20,9 @@ public interface CategoryService {
 
     Category findByName(String name);
 
-   // List<Category> searchCategories(String searchText);
+    Category findById(Long id);
+
+
+    // List<Category> searchCategories(String searchText);
 
 }

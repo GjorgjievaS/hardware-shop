@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useNavigate } from "react-router-dom";
 
-const pages = ["products", "pricing", "blog"];
+const pages = ["products", "pricing", "Shopping Cart"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 export default function Header() {

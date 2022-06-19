@@ -25,5 +25,10 @@ public class CategoryRestController {
     public List<Category> findAll() {
         return this.categoryService.listCategories();
     }
+
+    @GetMapping ("/{id}")
+    public Category findById(Long id) {
+        return this.categoryService.findById(id);
+    }
 }
 

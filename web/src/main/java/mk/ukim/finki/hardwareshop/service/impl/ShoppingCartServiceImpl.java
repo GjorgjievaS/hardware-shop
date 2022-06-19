@@ -65,6 +65,17 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
+    public ShoppingCart addProductToShoppingCart(Product product, String username) {
+        ShoppingCart shoppingCart = this.getActiveShoppingCart(username);
+        if(shoppingCart.getProducts()
+                .stream().filter(i -> i.getId().equals(product.getId()))
+                .collect(Collectors.toList()).size() > 0)
+            throw new ProductAlreadyInShoppingCartException(product.getId(), username);
+        shoppingCart.getProducts().add(product);
+        return this.shoppingCartRepository.save(shoppingCart);
+    }
+
+    @Override
     public void clearShoppingCartAfterPayment(String username) {
         ShoppingCart shoppingCart = this.getActiveShoppingCart(username);
         shoppingCart.setDeviceList(new ArrayList<>());

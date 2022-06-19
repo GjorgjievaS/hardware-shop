@@ -36,6 +36,11 @@ public class CategoryServiceImpl implements CategoryService {
         return c;
     }
 
+    @Override
+    public Category findById (Long id) {
+        return categoryRepository.findById(id).orElseThrow(IllegalArgumentException::new);
+    }
+
 //    @Override
 //    public void delete(String name) {
 //        if (name==null || name.isEmpty()) {

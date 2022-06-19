@@ -1,15 +1,14 @@
-import {
-  Grid,
-  Button,
-  Typography,
-} from "@mui/material";
+import { Grid, Button, Typography, Alert, Snackbar } from "@mui/material";
 import * as React from "react";
 import { useParams } from "react-router-dom";
 import { ProductRepository } from "./ProductRepository";
+import { ShoppingCartRepository } from "./ShoppingCartRepository";
 
 export default function ProductDetailPage() {
   const params = useParams();
   const [data, setData] = React.useState();
+  const [success, setSuccess] = React.useState(false);
+  const [error, setError] = React.useState(false);
 
   const numberFormat = (value) =>
     new Intl.NumberFormat("en-gb", {
@@ -29,6 +28,18 @@ export default function ProductDetailPage() {
         });
     }
   }, [params.id]);
+
+  const addToCart = () => {
+    ShoppingCartRepository.addToCart(data, "admin")
+      .then((response) => {
+        console.log(response);
+        setSuccess(true);
+      })
+      .catch((error) => {
+        console.log(error);
+        setError(true);
+      });
+  };
 
   return (
     <>
@@ -53,17 +64,59 @@ export default function ProductDetailPage() {
               </Button>
             )}
             <Typography variant="h4">{data?.name}</Typography>
-            <Typography style={{margin: "2%"}} variant="body1">{data?.description}</Typography>
-            <Typography style={{margin: "2%"}} color="teal" variant="h6">
+            <Typography style={{ margin: "2%" }} variant="body1">
+              {data?.description}
+            </Typography>
+            <Typography style={{ margin: "2%" }} color="teal" variant="h6">
               {numberFormat(data?.price)}
             </Typography>
             {data?.quantity > 0 && (
-              <Button variant="contained" color="primary">
+              <Button variant="contained" color="primary" onClick={addToCart}>
                 Add to Cart
               </Button>
             )}
           </Grid>
         </Grid>
+        <Snackbar
+          open={success}
+          autoHideDuration={3000}
+          onClose={() => {
+            setSuccess(false);
+          }}
+          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        >
+          {success && (
+            <Alert
+              onClose={() => {
+                setSuccess(false);
+              }}
+              severity="success"
+              sx={{ width: "100%" }}
+            >
+              Product successfully added to cart.
+            </Alert>
+          )}
+        </Snackbar>
+        <Snackbar
+          open={error}
+          autoHideDuration={3000}
+          onClose={() => {
+            setError(false);
+          }}
+          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        >
+          {error && (
+            <Alert
+              onClose={() => {
+                setError(false);
+              }}
+              severity="error"
+              sx={{ width: "100%" }}
+            >
+              Product already in cart.
+            </Alert>
+          )}
+        </Snackbar>
       </div>
     </>
   );
