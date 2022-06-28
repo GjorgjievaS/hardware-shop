@@ -1,0 +1,20 @@
+.container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  width: 60%;
+}
+
+.checkout{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  width: 20%;
+}

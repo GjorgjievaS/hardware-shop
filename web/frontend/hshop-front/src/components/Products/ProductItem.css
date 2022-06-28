@@ -1,0 +1,33 @@
+.cart-items{
+  padding: 1rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-box{
+    width: 150px;
+    text-align: center;
+    align-self: flex-start;
+   }
+   .image-box img{
+       width: 100%;
+   }
+.product-info{
+     margin-left: 1rem;
+   }
+.about h2{
+  margin: 0;
+}
+.remove a{
+  padding: 0 0.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: #ff2020;
+  color: #000;
+}
+.remove a:hover{
+  background-color: #ff0000;
+  color: #fff;
+}
